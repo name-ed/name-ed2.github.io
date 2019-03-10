@@ -1,0 +1,595 @@
+/* Шрифты */
+@font-face {
+    font-family: 'MyriadPro_smbold';
+    src: url('../fonts/MyriadPro-Semibold.eot');
+    src: url('../fonts/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Semibold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Semibold.woff') format('woff'),
+        url('../fonts/MyriadPro-Semibold.ttf') format('truetype'),
+        url('../fonts/MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro_bold';
+    src: url('../fonts/MyriadPro-Bold.eot');
+    src: url('../fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Bold.woff') format('woff'),
+        url('../fonts/MyriadPro-Bold.ttf') format('truetype'),
+        url('../fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadPro_reg';
+    src: url('../fonts/MyriadPro-Regular.eot');
+    src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+        url('../fonts/MyriadPro-Regular.woff') format('woff'),
+        url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+        url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.reg() {
+	font-family: 'MyriadPro_reg', sans-serif;
+}
+
+.bold() {
+	font-family: 'MyriadPro_bold', sans-serif;
+}
+.smbold() {
+	font-family: 'MyriadPro_smbold', sans-serif;
+}
+
+/* Цвета */
+@text:  #272727;
+@light: #ffffff;
+@element: #e4334f;
+@inactive: #a5a5a5;
+@active: #343434;
+@dark: rgba(0,0,0,0.9);
+@block: #f9f9f9;
+
+/* Скорость изменения */
+@trans: 0.5s;
+
+
+/* Базовые настроки */
+html {
+	font-size: 10px;
+}
+
+body {
+	.reg();
+	transition: all @trans;
+}
+
+a {
+	color: @light
+}
+
+a:hover, a:active, a:focus {
+	text-decoration: none;
+	outline: none;
+	color: @light;
+}
+
+button, input, a, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+
+.button {
+	padding: 1rem 3rem;
+	border-radius: 4px;
+	font-size: 2rem;
+	background-color: @element;
+	color: @light;
+	text-transform: uppercase;
+	border: none;
+	transition: all @trans;
+	&:hover {
+		cursor: pointer;
+		background-color: darken(@element, 5%);
+	}
+}
+
+/* Поля ввода */
+input, select, textarea {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	height: 4rem;
+	width: 100%;
+	border: none;
+	border-radius: 4px;
+	color: @text;
+	&::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+	&::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+	&:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+	&:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+	&:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+	&:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+	&:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+	&:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+}
+
+/* Секция заголовка */
+.section {
+	&-header {
+		margin: 10rem;
+		text-align: center;
+		text-transform: uppercase;
+		color: @light;
+	}
+	p {
+		display: block;
+		background: transparent url(../img/title-line.png) center no-repeat;
+		background-size: 110%;
+	}
+}
+
+/* Типографика */
+
+h1 {
+	font-size: 9rem;
+}
+
+h2 { 
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+
+
+/* Логотип */
+.logo {
+	img {
+		padding: 0.5rem;
+		height: 5rem;
+	 width: auto;
+	}
+	&-text {
+		p {
+			margin-top: 0.5rem;
+			font-size: 1.3rem;
+			height: 7rem;
+			line-height: 2rem;
+			color: @light;
+		}
+	}
+}
+
+/* Навигация (меню) */
+.menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 5rem;
+	background: @dark;
+	z-index: 9999;
+	&-mobile {
+		display: none;
+	}
+}
+
+.phone {
+	&-block {
+		text-align: center;
+	}
+	&-link {
+		display: inline-block;
+		font-size: 1.4rem;
+		height: 5rem;
+		line-height: 5rem;
+		color: @light;
+		&:hover {
+			color: @light;
+			transition: all @trans;
+		}
+	}
+}
+
+.navigation {
+	padding: 0;
+	text-align: center;
+&-list {
+		margin-right: 2rem;
+		display: inline-block;
+		height: 5rem;
+		line-height: 5rem;
+	}
+	&-link {
+		display: block;
+		font-size: 1.4rem;
+		color: @inactive;
+		border: none;
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 3px;
+			margin-top: -0.3rem;
+			transform: scaleX(0);
+			background-color: @element;
+			transition: all @trans;
+		}
+		&:hover::after {
+			color: @light;
+			transform: scaleX(1);
+		}
+		&:focus {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 3px;
+			transform: scaleX(1);
+			background-color: @element;
+			transition: all @trans;
+		}
+	}
+}
+
+.close-btn {
+	display: none;
+} 
+
+/* Основной контент */
+.main {
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 20rem;
+	padding-bottom: 15rem;
+	color: @text;
+	background-color: @block;
+	&-title {
+		h1 {
+			margin-top: -1rem;
+		}
+		p {
+			display: block;
+			background: transparent url(../img/main/title-line.png) center no-repeat;
+			background-size: 85%;
+		}
+	}
+	&-button {
+		margin-top: 25rem;
+		background: transparent url(../img/main/main-button-shadow.png) top center no-repeat; 
+		&-link {
+			display: block;
+			padding: 1rem 1rem;
+			font-size: 1.3rem;
+			height: 7rem;
+			color: @light;
+			text-transform: none; 
+			background: url(../img/main/main-button.png) center no-repeat;
+			background-position: center;
+			transform: translateY(-0.3rem);
+			&:hover {
+				background: url(../img/main/main-button-active.png) center no-repeat;
+				transition: all @trans;
+			}
+		}
+	}
+}
+
+/* Услуги */
+.secvices {
+	text-align: center;
+	background-color: @block;
+	&-block {
+		position: relative;
+		overflow: hidden;
+		margin: 2rem 0;
+		height: 30rem;
+		width: 100%;
+		color: @light;
+		background-color: @block;
+		border-bottom: 5px solid @element;
+		border-radius: 4px;
+		img {
+			display: block;
+			margin: 0 auto;
+			height: 100%;
+		}
+		p {
+			font-size: 1.8rem	;
+			position: absolute;
+			padding-top: 0.5rem;
+			top:83%;
+			width: 100%;
+			height: 17%;
+			line-height: 2rem;
+			background-color: @dark;
+		}
+		&_desc {
+			text-align: left;
+			position: relative;
+			bottom: 0%;
+			height: 100%;
+			background-color: @dark;
+			z-index: 99;
+			transition: all @trans;
+			a {
+				position: absolute;
+				text-align: center;
+				height: 20%;
+				top: 80%;
+				font-size: 2rem;
+				line-height: 3rem;
+			}
+		}
+		&:hover &_desc {
+			bottom: 100%;
+			
+		}
+		.description {
+			position: absolute;
+			top: 0%;
+			line-height: 3rem;
+			background-color: @dark;
+			padding: 2rem;
+			text-align: left;
+		}
+	}
+}
+
+
+/* Преимущества */
+.advantages {
+text-align: center;
+background-color: @block;
+color: @text;
+&-block {
+	margin-top: 3rem;
+	padding: 0rem 3rem;
+	min-height: 30rem;
+}
+img {
+	height: 12rem;
+	}
+}
+
+
+/* Заказать */
+.order {
+	text-align: center;
+	background-color: @block;
+}
+.form {
+	color: @light;
+	margin-top: 2rem;
+	margin-bottom: 8rem;
+	padding: 3rem 2rem 3rem;
+	border-radius: 4px;
+	background: @dark;
+	label {
+		transform: translateY(50%);
+	}
+	&-btn {
+		margin-top: 1rem;
+		width: 100%;
+		&:hover {
+			background-color: @active;
+			transition: all @trans;
+		}
+	}
+	&-textarea {
+		height: 8rem;
+	}
+}
+
+
+/* О нас */
+.about {
+	background-color: @block;
+	padding: 2rem	1rem;
+}
+
+/* Контакты */
+
+.contacts {
+	margin: 4rem 0;
+	line-height: 6rem;
+}
+
+
+/* Подвал */
+footer {
+	font-size: 1rem;
+	text-align: center;
+	background-color: @dark;
+	height: 5rem;
+	color: @light;
+	line-height: 5rem;
+}
+
+
+
+
+/* Медиа запросы */
+@media (max-width: 1199px) {
+
+h1 { 
+	font-size: 8rem;
+}
+h2, h3 {
+	font-size: 2rem;
+}
+
+.section {
+	&-header {
+		p {
+			background: none;
+		}
+	}
+}
+
+.main {
+	&-button {
+	}
+	p {
+		background: none;
+	}
+}
+
+.advantages {
+	&-block {
+		min-height: 30rem;
+		}
+	}
+
+	.contacts {
+		line-height: 5rem;
+	}
+}
+
+
+
+@media (max-width: 991px) {
+
+.section {
+	&-header {
+		margin: 8rem;
+	}
+}
+
+.main {
+	&-button {
+		margin-top: 15rem;
+	}
+}
+
+.form {
+	label {
+	transform: none;
+	}
+}
+
+.contacts {
+	margin: 1rem 0;
+	line-height: 3rem;
+	}
+}
+
+@media (max-width: 767px) {
+
+h1 {
+	font-size: 4rem;
+}
+
+.secvices {
+	&-block {
+		p {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+.advantages {
+	&-block {
+		min-height: 25rem;
+	}
+}
+
+.form {
+	margin-top: 0rem;
+	margin-bottom: 3rem;
+	padding: 2rem;
+	border-radius: 8px;
+	&-input {
+		margin-bottom: 1rem;
+		}
+	}
+	.about {
+		padding: 1rem;
+	}
+}
+
+@media (max-width: 440px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1rem;
+	}
+	p {
+		font-size: 1.2rem;
+	}
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: @dark;
+		left: 0;
+		margin: 0;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: translateY(-100%);
+		transition: all @trans;
+		&-mobile {
+			display: block;
+			position: fixed;
+			text-align: center;
+			left: 0;
+			top: 0;
+			width: 100%;
+			background: @dark;
+			z-index:999;
+			&-link {
+				display: block;
+				text-transform: uppercase;
+				height: 4rem;
+				line-height: 4rem;
+				color: @inactive;
+				}
+			}
+		}
+
+		.active-menu {
+			transform: translateY(0%);
+		}
+
+		.navigation {
+			padding: 0;
+			text-align: center;
+			&-list {
+				display: block;
+				margin: 0;
+			}
+		}
+
+		.close-btn {
+			display: block;
+			position: fixed;
+			margin: 2rem;
+			top: 0;
+			right: 0;
+		} 
+		.main {
+			h1 {
+				font-size: 3rem;
+			}
+		}
+}
+
+@media (max-width: 230px) {
+	html {
+		font-size: 8px;
+	}
+}

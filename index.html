@@ -1,13 +1,494 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Пример веб-страницы</title>
- </head>
- <body>
-  <h1>Заголовок</h1>
-  <!-- Комментарий -->
-  <p>Первый абзац.</p>
-  <p>Второй абзац.</p>
- </body>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <title>Ростелефон - Ремонт смартфонов</title>
+  </head>
+
+  <body>
+
+  	<div class="menu">
+  		<div class="container">
+  			<div class="row">
+
+  				<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+  					<div class="logo">
+  						<a href="#main" >
+  							<div class="logo-slider cycle-slideshow" data-cycle-speed="500" data-cycle-timeout="1000">
+                  <img src="img/logo/logo-1.png" alt="ios">
+                  <img src="img/logo/logo-2.png" alt="andoid">
+                  <img src="img/logo/logo-3.png" alt="windows">
+                </div>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="col-lg-4 hidden-md hidden-sm hidden-xs">
+  					<div class="logo-text">
+  						<p>Сервисный центр РОСТЕЛЕФОН <br>Ремонт сотовых телефонов в Санкт-Петербурге</p>
+  					</div>
+  				</div>
+
+					<div class=" col-lg-5 col-md-9 col-sm-8 col-xs-12">
+            <a href="#close" class="close-btn">&#10006;</a>
+						<ul class="navigation" id="menu">
+							<li class="navigation-list"><a href="#main" class="navigation-link" >Главная</a></li>
+							<li class="navigation-list"><a href="#services" class="navigation-link">Услуги</a></li>
+							<li class="navigation-list"><a href="#advantages" class="navigation-link">Преимущества</a></li>
+							<li class="navigation-list"><a href="#order" class="navigation-link">Заказать</a></li>
+							<li class="navigation-list"><a href="#contacts" class="navigation-link">Контакты</a></li>
+						</ul>
+					</div>
+
+		  	  <div class=" col-lg-2 col-md-2 col-sm-3 hidden-xs">
+							<div class="phone-block">
+							  <a class="phone-link" href="#">+7 495 771 05 08</a>
+							</div>
+					</div>	
+
+  			</div>
+  		</div>
+  	</div>
+
+  	<div class="menu-mobile">
+  		<div class="container">
+  			<div class="row">
+  				<a href="#" class="menu-mobile-link">Menu</a>
+  			</div>
+  		</div>
+  	</div>
+
+  	<main class="main" id="main">
+  		<div class="container">
+  			<div class="row">
+  				<div class="main-title">
+  					<p>Сервисный центр в Санкт-Петербурге </p>
+  					<h1>Ростелефон</h1>
+  					<h2>Недорогой и качественный ремонт смартфонов<br>в удобные для вас сроки</h2>
+  				</div>
+  				<div class="main-button">
+  						<a class="main-button-link" href="#services">Узнать <br>подробнее</a>
+  					</div>
+  			</div>
+  		</div>
+  	</main>
+
+		<section class="section parallax-window" id="services" data-parallax="scroll" data-image-src="img/slide-1.jpg" id="services">
+  		<div class="container">
+  			<div class="row">
+  						<div class="section-header" >
+  							<h1>Услуги</h1>
+  							<p>Что у вас сломалось?</p>
+  						</div>
+  					</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="secvices">
+  		<div class="container">
+
+  			<div class="row">
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/1.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description">Обращаясь к нам, будьте уверены, Ваше устройство отремонтирует настоящий специалист с опытом.</p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Замена дисплея <br>от 1000р.</p>
+  					</div>
+  				</div>
+
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/2.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description">Замена и восстановление любого системного разъема, в кратчайшие сроки</p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Замена разъёма<br>от 1000р.</p>
+  					</div>
+  				</div>
+
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/3.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description"> Забыли пароль от устройства? Мы разблокируем его, можете быть уверены</p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Разблокировка<br>от 800р.</p>
+  					</div>
+  				</div>
+
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/4.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description">Система стала тормозить? Частично не русифицирован? Перепрошивка вашего устройства Вам поможет.</p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Перепрошивка<br>от 1000р.</p>
+  					</div>
+  				</div>
+  			</div>
+
+
+
+  			<div class="row">
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/5.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description">Уронили в лужу? Не спешите выбрасывать, мы ещё сможем его восстановить.</p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Восстановление после воды<br>от 1000р.</p>
+  						<a class="form-btn button" href="#order">Заказать</a>
+  					</div>
+  				</div>
+
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/6.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description">Стал быстро разряжаться? Вздулась батарея? Исправим дефект в кратчайшие сроки </p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Замена батареи<br>от 500р.</p>
+  					</div>
+  				</div>
+
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/7.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description">Очень нравится телефон, но его корпус многое повидал? Мы можем заменить корпус на новый</p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Замена корпуса<br>от 800р.</p>
+  					</div>
+  				</div>
+
+  				<div class="col-md-3 col-md-offset-0 col-sm-6">
+  					<div class="secvices-block">
+  						<img src="img/services/8.jpg" alt="">
+  						<div class="secvices-block_desc">
+  							<p class="description">Стало плохо слышно Вас или собеседника? Исправим дефект, быстро и аккуратно</p>
+  							<a class="form-btn button" href="#order">Заказать</a>
+  						</div>
+  						<p>Ремонт динамиков<br>от 500р.</p>
+  					</div>
+  				</div>
+  			</div>
+
+
+  		</div>
+  	</section>
+
+
+		<section class="section parallax-window" id="advantages" data-parallax="scroll" data-image-src="img/slide-2.jpg" id="services">
+  		<div class="container">
+  			<div class="row">
+  						<div class="section-header" >
+  							<h1>Преимущества</h1>
+  							<p>Почему вам стоит выбрать нас?</p>
+  						</div>
+  					</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="advantages">
+  		<div class="container">
+
+  				<div class="row">
+	  				<div class="col-md-4 col-md-offset-0 col-sm-6">
+	  					<div class="advantages-block">
+	  							<picture>
+	  							   <source srcset="img/advantages/svg/1.svg">
+	  							   <img src="img/advantages/1.png" alt="1">
+	  							  </picture> 
+	  							<h3>Быстрый ремонт</h3>
+	  							<p>Накопленный 4-х летний опыт в области ремонта смартфонов позволяет нам быстро устранять неполадки, сокращая затраты времени на поиск решения проблемы</p>
+	  					</div>
+	  				</div>
+	  				<div class="col-md-4 col-md-offset-0 col-sm-6">
+	  					<div class="advantages-block">
+	  							<picture>
+	  							   <source srcset="img/advantages/svg/2.svg">
+	  							   <img src="img/advantages/2.png"  alt="2">
+	  							  </picture> 
+	  							<h3>Реальная гарантия </h3>
+	  							<p>Мы используем качественные запчасти для ремонта Ваших смартфонов. Это позволяет нам давать длительную 60 - дневную гарантию на все виды ремонта</p>
+	  					</div>
+	  				</div>
+	  				<div class="col-md-4 col-md-offset-0 col-sm-6">
+	  					<div class="advantages-block">
+	  							<picture>
+	  							   <source srcset="img/advantages/svg/3.svg">
+	  							   <img src="img/advantages/3.png"  alt="3">
+	  							  </picture> 
+	  							<h3>Прозрачные цены</h3>
+	  							<p>На нашем сайте представлены окончательные цены на услуги. Вы можете не сомневаться в том, что непредвиденных расходов не возникнет</p>
+	  					</div>
+	  				</div>
+
+	  				<div class="col-md-4 col-md-offset-0 col-sm-6">
+	  					<div class="advantages-block">
+
+	  							<picture>
+	  							   <source srcset="img/advantages/svg/4.svg">
+	  							   <img src="img/advantages/4.png" alt="4">
+	  							  </picture> 
+	  							<h3>Временное средство связи</h3>
+	  							<p>В 21 веке оставаться без связи никак нельзя, поэтому, на время ремонта, мы предлагаем Вам телефон на замену Вашему</p>
+	  					</div>
+	  				</div>
+	  				<div class="col-md-4 col-md-offset-0 col-sm-6">
+	  					<div class="advantages-block">
+	  							<picture> 
+	  							   <source srcset="img/advantages/svg/5.svg">
+	  							   <img src="img/advantages/5.png"  alt="5">
+	  							  </picture> 
+	  							<h3>Включаем невключаемое </h3>
+	  							<p>Мы восстановим Ваше устройство, даже если от него отказались наши конкуренты</p>
+	  					</div>
+	  				</div>
+	  				<div class="col-md-4 col-md-offset-0 col-sm-6">
+	  					<div class="advantages-block">
+	  							<picture>
+	  							   <source srcset="img/advantages/svg/6.svg">
+	  							   <img src="img/advantages/6.png"  alt="6">
+	  							  </picture> 
+	  							<h3>Подарок всем клиентам </h3>
+	  							<p>У нас гарантированный подарок каждому обратившемуся к нам клиенту, а что это будет Вы узнаете первыми</p>
+	  					</div>
+	  				</div>
+	  			</div>
+
+  			</div>
+  		</div>
+  	</section>
+
+
+		<section class="section parallax-window" id="order" data-parallax="scroll" data-image-src="img/slide-3.jpg" id="services">
+  		<div class="container">
+  			<div class="row">
+  						<div class="section-header" >
+  							<h1>Оформление заказа</h1>
+  							<p>Что вы хотите получить?</p>
+  						</div>
+  					</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="order">
+  		<div class="container">
+  			<div class="row">
+  				<h2>Заполните эту форму, для записи на ремонт:</h2>
+  			</div>
+
+  			<div class="row">
+  				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+
+  				<form  class="form" action="mailer/smart.php" method="POST">
+	  					<div class="row">
+	  						<div class="col-md-1">
+	  							<label  for="#">Модель:</label>
+	  						</div>
+	  						 <div class="col-md-11">
+	  						 	<input class="form-input" name="user_modelphone" required type="text" placeholder="Например: iPhone SE">
+	  						 </div>
+	  					</div>
+
+	  					<div class="row">
+	  						<div class="col-md-11 col-md-offset-1">
+	  							<textarea class="form-textarea" name="user_message" required rows="5" placeholder="Опишите Вашу проблему"></textarea>
+	  						</div>
+	  					</div>
+
+	  					<div class="row">
+	  						<div class="col-md-1">
+	  							<label for="#">Имя:</label>
+	  						</div>
+	  						<div class="col-md-5">
+	  							<input class="form-input" name="user_name" required type="text" placeholder="Введите Ваше имя">
+	  						</div>
+	  						<div class="col-md-1">
+	  							<label for="#">Телефон:</label>
+	  						</div>
+	  						<div class="col-md-5">
+	  							<input class="form-input" name="user_phone" required id="phone" type="text">
+	  						</div>
+	  					</div>
+
+	  					<div class="row">
+	  						<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+	  							<button class="form-btn button" type="submit">Заказать</button>
+	  						</div>
+	  					</div>
+  				</form>
+
+  				</div>
+  			</div>
+
+  		</div>
+  	</section>
+
+
+  	<section class="section parallax-window" id="about" data-parallax="scroll" data-image-src="img/slide-4.jpg" id="services">
+  		<div class="container">
+  			<div class="row">
+  						<div class="section-header" >
+  							<h1>О нас</h1>
+  							<p>Коротко и ясно</p>
+  						</div>
+  					</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="about">
+  		<div class="container">
+  			<div class="row">
+  				<div class="about-title">
+            <h3><hr>Особенности нашей компании<hr></h3>
+							<p>Работаем быстро и качественно. 
+                  Оптимальные цены, частые скидки и готовность всегда пойти навстречу своему клиенту. 
+                  Хорошо ориентируемся во всех моделях смартфонов.
+                  Несем полную ответственность за свою работу, поэтому даем гарантию 60 дней. 
+                  Обращаясь к нам, Вы можете быть спокойны за свой гаджет. В скором времени Вы заберете его в состоянии лучше, чем до ремонта смартфона.</p>
+  				</div>
+  				<div class="about-title">
+            <h3><hr>Надежность нашего сервисного центра<hr></h3> 
+  						<p>Мы работаем с 2013 года, и сегодня, накопленный опыт позволяет нам справляться с задачами сложнее чем вчера, за более короткий временной промежуток. Обращаясь к нам с ремонтом смартфона в Санкт-Петербурге, кроме качества предоставленных услуг и приятного подарка, Вы получаете 60 дней ЧЕСТНОЙ гарантии.</p>
+              <p>Наши специалисты выполняют работу максимально ответственно, и тщательно проверяют устройство после ремонта.</p>
+  				</div>
+  				<div class="about-title">
+            <h3><hr>Специфика нашего сервис-центра<hr></h3> 
+  						<p>Мы не беремся чинить смартфоны, которые не подлежат восстановлению и ремонту. 
+                Наши специалисты, если знают, что проблема не решаемая, отказываются от ремонта. 
+                Доверяйте только проверенному сервисному центру, и Вы еще долго сможете пользоваться своим гаджетом после ремонта. 
+                Наша компания гарантирует качественную работу за короткий период времени.</p>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+
+		<section class="section parallax-window" id="contacts" data-parallax="scroll" data-image-src="img/slide-5.jpg" id="services">
+  		<div class="container">
+  			<div class="row">
+  						<div class="section-header" >
+  							<h1>Контакты</h1>
+  							<p>Как к нам попасть?</p>
+  						</div>
+  					</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="contacts">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-6">
+  					<h2>Сервисный центр РОСТЕЛЕФОН</h2>
+  						<p>
+  						<strong>Телефон:</strong> +7 495 771 05 08<br>
+  						<strong>Наш адрес:</strong> 11-я Линия Васильевского острова, дом 24, Санкт-Петербург<br>
+  						<strong>Станция метро:</strong> Василеостровская<br>
+  						<strong>Часы работы:</strong> Пн-Пт с 9:00 до 18:00</p>
+  						<h3>Мы починим Ваш телефон!</h3>
+  				</div>
+  				<div class="col-md-6">
+  					<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d9506.16147356335!2d30.26626451271972!3d59.9416949391497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x46963125a7c1d999%3A0xcd035fbf4fb75b5b!2z0JzQtdGC0YDQviDQktCw0YHQuNC70LXQvtGB0YLRgNC-0LLRgdC60LDRjywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!3m2!1d59.9434627!2d30.2799572!4m5!1s0x4696312642854469%3A0xa9a04cc939eb22cc!2zMTEt0Y8g0LvQuNC9LiDQktCw0YHQuNC70YzQtdCy0YHQutC-0LPQviDQntGB0YLRgNC-0LLQsCwgMjQsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTkxNzg!3m2!1d59.939954!2d30.275091!5e0!3m2!1sru!2sru!4v1512824536051" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+
+  	<footer>
+  		<div class="container">
+  			<div class="row">
+  				Разработка сайта CHEMOV.N
+  			</div>
+  		</div>
+  	</footer>
+
+
+		<!-- Bootstrap core CSS -->
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom styles for this template -->
+		<link href="css/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+    <!-- Слайдер картинок -->
+    <script src="js/jquery.cycle2.min.js"></script>
+
+    <!-- Скролл по якроям и мобильное меню -->
+    <script type="text/javascript">
+     $(document).ready(function(){
+      var menuLink = $('.menu-mobile-link'),
+          menu = $('.menu'),
+          close = $('.close-btn'),
+          navLink = $('.navigation-link');
+
+        /*открытие меню*/
+        menuLink.click(function() {
+         menu.toggleClass('active-menu');
+        });
+        /*закрытие меню*/
+        close.click(function() {
+         menu.toggleClass('active-menu');
+        });
+        navLink.click(function() {
+          menu.toggleClass('active-menu');
+        });
+        /*скролл*/
+        $(document).on("click","a", function (event) {
+            event.preventDefault();
+            var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+            $('body,html').animate({scrollTop: top}, 1000);
+        });
+    });
+    </script>
+
+    <!-- Маска -->
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script>
+    	jQuery(function($){
+    	   $("#phone").mask("+7 (999) 999-99-99");
+    	});
+    </script>
+
+    <!-- Форма -->
+    <script>
+    	$('form').submit(function(event) {
+    		event.preventDefault();
+    			$.ajax({
+    			type: "POST",
+    			url: "../src/mailer/smart.php",
+    			data: $(this).serialize()
+    		}).done(function() {
+    			$(this).find("input").val("");
+    			alert("Сообщение успешно отправлено");
+    			$("form").trigger("reset");
+    		});
+    		return false;
+    	});
+    </script>
+  </body>
 </html>
